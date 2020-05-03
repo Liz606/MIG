@@ -1,0 +1,3 @@
+name: 李斯源
+email: sy-li17@mails.tsinghua.edu.cn,
+area: deep reinforcement learning, hierarchical reinforcement learning, transfer reinforcement learning

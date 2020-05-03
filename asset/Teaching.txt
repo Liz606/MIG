@@ -1,0 +1,7 @@
+Deep reinforcement learning
+
+This course introduces the basic knowledge and cutting-edge research directions of deep reinforcement learning. Specific content includes machine learning, deep learning, uncertainty reasoning and planning, reinforcement learning, and probability graph models. The objectives of this course are: 1) to enable students to use the learned technology to solve new artificial intelligence problems in real life; 2) to enable students to lay a solid foundation for further in-depth study of deep reinforcement learning.
+
+Artificial Intelligence: Principles and Techiniques
+
+This course introduces the basic principles and techniques of artificial intelligence. Content includes search, constraint satisfaction, game, probability graph model, machine learning, Markov decision process, and reinforcement learning. The objectives of this course are to prepare students for further study or research of artificial intelligence sub-fields.

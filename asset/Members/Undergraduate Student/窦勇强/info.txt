@@ -1,0 +1,3 @@
+name: 窦勇强
+email YongqiangDou00@gmail.com
+research area: reinforcement learning, statistical learning

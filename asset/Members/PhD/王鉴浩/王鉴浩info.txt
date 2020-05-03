@@ -1,0 +1,3 @@
+name: 王鉴浩
+email: wjh720.eric@gmail.com
+area: Deep Reinforcement Learning, Multi-agent Reinforcement Learning

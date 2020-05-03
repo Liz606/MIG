@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./common.css">
+    <style>
+        aside {
+            float: left;
+        }
+
+        .menu {
+            width: 200px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu li {
+            list-style: none;
+            width: 150px;
+            padding: 5px 10px;
+            border: 1px solid #c0c0c0;
+            color: #696767;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .menu li:hover {
+            background: #518494;
+            border: 1px solid #518494;
+            color: #fff;
+        }
+
+        .menu li+li {
+            border-top: none;
+        }
+
+        .menu li.active {
+            background: #2a5867;
+            border: 1px solid #2a5867;
+            color: #fff;
+        }
+
+        article .title {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        article .hidden {
+            display: none;
+        }
+
+        article .active {
+            display: block;
+        }
+
+        article .active,
+        article .hidden {
+            margin-left: 200px;
+        }
+
+        article ul li {
+            margin: 15px;
+        }
+
+        article ul li a {
+            font-weight: bold;
+        }
+    </style>
+    <title>About</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="concent-wrap">
+            <header class="header">
+                <div class="logo"></div>
+                <div class="title">Publications</div>
+            </header>
+            <nav class="nav">
+                <ul>
+                    <li>Machine Intelligence Group</li>
+                    <li><a href="./about.html">Home</a></li>
+                    <li><a href="./people.html">People</a></li>
+                    <li><a href="./news.html">News</a></li>
+                    <li><a href="./teaching.html">Teaching</a></li>
+                    <li><a href="./videos.html">Videos</a></li>
+                    <li><a href="./join.html">Join</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <aside>
+                    <ul class="menu">
+                        <li class="active">2020</li>
+                        <li>2019</li>
+                        <li>2018</li>
+                    </ul>
+                </aside>
+                <article>
+                    <div class="title">Multi-Agent</div>
+                    <div class="active" id="content-2020">
+                        <ul>
+                            <li>
+                                Zhizhou Ren, Guangxiang Zhu, Beining Han, Jianglun Chen and Chongjie Zhang.
+                                <strong>Towards Understanding Value Function Approximation: Rethinking the Effects of
+                                    Twin
+                                    Q-Networks.</strong>
+                                Under Review, 2020.</li>
+                            <li>Tonghan Wang, Heng Dong, Victor Lesser, and Chongjie Zhang <strong>ROMA: Multi-Agent
+                                    Reinforcement Learning with Emergent Roles.</strong> Under Review, 2020.</li>
+                            <li>Jin Zhang, Jianhao Wang, Hao Hu, and Chongjie Zhang
+                                <strong>Learn to Effectively Explore in Context-Based Meta-RL</strong> Under Review,
+                                2020.
+                            </li>
+                            <li>Tonghan Wang*,
+                                Jianhao Wang*, Yi Wu, and Chongjie Zhang
+                                <a href="https://openreview.net/forum?id=BJgy96EYvr&noteId=BJgy96EYvr">Influence-Based
+                                    Multi-Agent Exploration.
+                                    ICLR 2020: International Conference on Learning Representations (Spotlight)</a>
+
+                            </li>
+                            <li>Tonghan Wang*, Jianhao
+                                Wang*, Chongyi Zheng, and Chongjie Zhang
+                                <a href="https://openreview.net/forum?id=HJx-3grYDB&noteId=HJx-3grYDB">Learning Nearly
+                                    Decomposable Value Functions with Communication Minimization.
+                                    ICLR 2020: International Conference on Learning Representations</a>
+                            </li>
+                            <li><a href="https://openreview.net/pdf?id=HkxjqxBYDB">Guangxiang Zhu*, Zichuan Lin*,
+                                    Guangwen Yang and Chongjie Zhang.
+                                    Episodic Reinforcement Learning with Associative Memory.
+                                    ICLR 2020: Eighth International Conference on Learning Representations.</a>
+                            </li>
+                            <li>Guangxiang Zhu*, Jianhao Wang*, Zhizhou
+                                Ren*, and Chongjie Zhang.<a href="https://arxiv.org/pdf/1904.07482.pdf">
+                                    Object-Oriented Dynamics Learning through Multi-Level Abstraction.
+                                    AAAI 2020: Thirty-Fourth AAAI Conference on Artificial Intelligence.</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hidden" id="content-2019">
+                        <ul>
+                            <li>Siyuan Li, Fangda Gu, Guangxiang Zhu, and
+                                Chongjie Zhang.<a href="https://arxiv.org/abs/1806.03793">
+                                    Context-Aware Policy Reuse.
+                                    AAMAS 2019: International Conference on Autonomous Agents and MultiAgent
+                                    Systems.</a>
+                            </li>
+                            <li>Xinliang Song, Tonghan Wang,
+                                and Chongjie Zhang<a href="https://dl.acm.org/doi/10.5555/3306127.3331788">
+                                    Convergence of Multi-Agent Learning with a Finite Step Size in General-Sum Games
+                                    AAMAS 2019: International Conference on Autonomous Agents and Multi-Agent
+                                    Systems</a>
+                            </li>
+                            <li>Siyuan Li*, Rui Wang*, Minxue Tang, Chongjie Zhang<a
+                                    href="http://papers.nips.cc/paper/8421-hierarchical-reinforcement-learning-with-advantage-based-auxiliary-rewards.pdf">
+                                    Hierarchical Reinforcement Learning with Advantage-Based Auxiliary Rewards
+                                    (NeurIPS), 2019</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hidden" id="content-2018">
+                        <ul>
+                            <li>Guangxiang Zhu, Zhiao Huang, and Chongjie Zhang.<a href="http://papers.nips.cc/paper/8187-object-oriented-dynamics-predictor.pdf">
+                                    Object-Oriented Dynamics Predictor.
+                                    NeurIPS 2018: Advances in Neural Information Processing Systems.
+                                </a>
+                            </li>
+                            <li>Siyuan Li, Chongjie Zhang.<a href="https://arxiv.org/abs/1709.08201">
+                                    An Optimal Online Method of Selecting Source Policies for Reinforcement Learning
+                                    AAAI Conference on Artificial Intelligence (AAAI), 2018.</a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var menu = document.querySelector(".menu");
+    var activeItem = "";
+    menu.addEventListener("click", function (e) {
+        document.querySelector(".menu>.active").className = "";
+        var e = e || window.event, target = e.target || e.srcElement; // 兼容IE
+        target.className = "active";
+        actItemContent(target.innerHTML)
+    })
+    function actItemContent(year) {
+        document.querySelector("article>.active").className = "hidden";
+        document.querySelector("#content-" + year).className = "active";
+    }
+</script>
+
+</html>
