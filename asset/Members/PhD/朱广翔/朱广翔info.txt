@@ -1,4 +1,0 @@
-name: 朱广翔 
-email: guangxiangzhu@outlook.com 
-area: Sample-efficient reinforcement learning
-Personal Website: https://guangxiangzhu.github.io/

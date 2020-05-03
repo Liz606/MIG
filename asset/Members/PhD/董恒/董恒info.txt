@@ -1,4 +1,0 @@
-name: 董恒
-email: drdhii@163.com
-area: Deep Reinforcement Learning
-Personal Website: https://drdh.github.io

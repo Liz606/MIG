@@ -1,3 +1,0 @@
-name: 胡昊
-email: hu-h19@mails.tsinghua.edu.cn 
-area: Representation Learning for RL

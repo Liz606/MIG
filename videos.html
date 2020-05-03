@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./common.css">
+    <style>
+        .video-wrap li {
+            list-style: none;
+            overflow: hidden;
+            padding: 20px 10px;
+        }
+        .video-wrap li+li {
+            margin-top: 20px;
+            border-top: 2px solid #6d6868;
+        }
+
+        .date {
+            width: 60px;
+            text-align: center;
+            border: 2px solid #c0c0c0;
+            float: left;
+        }
+
+        .date span {
+            padding: 10px 0;
+            display: inline-block;
+        }
+
+        .month {
+            background: #c0c0c0;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .video-diref {
+            margin-left: 100px;
+        }
+
+        .video-diref .title {
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 0;
+        }
+
+        .video-diref .more {
+            float: right;
+            margin-top: 20px;
+            background: #c0c0c0;
+            padding: 8px;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .video-diref .more a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
     <title>About</title>
 </head>
+
 <body>
     <div class="container">
         <div class="concent-wrap">
@@ -21,11 +76,125 @@
                     <li><a href="./news.html">News</a></li>
                     <li><a href="./teaching.html">Teaching</a></li>
                     <li><a href="./videos.html">Videos</a></li>
-                    <li><a href="./join.html">Join</a></li>  
+                    <li><a href="./join.html">Join</a></li>
                 </ul>
             </nav>
-            <div class="content"></div>
+            <div class="content">
+                <ul class="video-wrap">
+                    <li>
+                        <div class="video-box">
+                            <video id="myVideo" width="100%" height="100%" preload="auto" controls="controls">
+                                <source src="./asset/Video/1.mp4" type="video/mp4" />Your browser does not support the
+                                video tag.
+                            </video>
+                        </div>
+                        <div class="date">
+                            <span>27</span>
+                            <div class="month">
+                                Jan
+                            </div>
+                        </div>
+                        <div class="video-diref">
+                            <div class="title">
+                                Marines vs. 30 Marines (ROMA)
+                            </div>
+                            <div class="more">
+                                <a href="https://iiis.tsinghua.edu.cn/show-8391-1.html" target="_blank">Read more...</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="video-box">
+                            <video id="myVideo" width="100%" height="100%" preload="auto" controls="controls">
+                                <source src="./asset/Video/2.mp4" type="video/mp4" />Your browser does not support the
+                                video tag.
+                            </video>
+                        </div>
+                        <div class="date">
+                            <span>6</span>
+                            <div class="month">
+                                Feb
+                            </div>
+                        </div>
+                        <div class="video-diref">
+                            <div class="title">
+                                Zerglings & 4 Banelings (ROMA)
+                            </div>
+                            <div class="more">
+                                <a href="https://iiis.tsinghua.edu.cn/show-8391-1.html" target="_blank">Read more...</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="video-box">
+                            <video id="myVideo" width="100%" height="100%" preload="auto" controls="controls">
+                                <source src="./asset/Video/3.mp4" type="video/mp4" />Your browser does not support the
+                                video tag.
+                            </video>
+                        </div>
+                        <div class="date">
+                            <span>1</span>
+                            <div class="month">
+                                Mar
+                            </div>
+                        </div>
+                        <div class="video-diref">
+                            <div class="title">
+                                Medivac, 2 Marauders & 7 Marines vs. 1 Medivac, 3 Marauders & 8 Marines (ROMA)
+                            </div>
+                            <div class="more">
+                                <a href="https://iiis.tsinghua.edu.cn/show-8391-1.html" target="_blank">Read more...</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="video-box">
+                            <video id="myVideo" width="100%" height="100%" preload="auto" controls="controls">
+                                <source src="./asset/Video/4.mp4" type="video/mp4" />Your browser does not support the
+                                video tag.
+                            </video>
+                        </div>
+                        <div class="date">
+                            <span>1</span>
+                            <div class="month">
+                                Apr
+                            </div>
+                        </div>
+                        <div class="video-diref">
+                            <div class="title">
+                                Overseer & 10 Banelings vs. 1 Roach (NDQ)
+                            </div>
+                            <div class="more">
+                                <a href="https://iiis.tsinghua.edu.cn/show-8391-1.html" target="_blank">Read more...</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="video-box">
+                            <video id="myVideo" width="100%" height="100%" preload="auto" controls="controls">
+                                <source src="./asset/Video/5.mp4" type="video/mp4" />Your browser does not support the
+                                video tag.
+                            </video>
+                        </div>
+                        <div class="date">
+                            <span>5</span>
+                            <div class="month">
+                                May
+                            </div>
+                        </div>
+                        <div class="video-diref">
+                            <div class="title">
+                                Zealots vs. 1 Ultralisk (NDQ)
+                            </div>
+                            <div class="more">
+                                <a href="https://iiis.tsinghua.edu.cn/show-8391-1.html" target="_blank">Read more...</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
+
 </html>

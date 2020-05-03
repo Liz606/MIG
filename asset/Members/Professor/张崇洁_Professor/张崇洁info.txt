@@ -1,7 +1,0 @@
-name: 张崇洁
-email: chongjie@tsinghua.edu.cn
-area:
-	Machine Learning: reinforcement learning, deep learning, statistical learning
-	Multi-Agent Systems: multi-agent learning, coordination, decision making under uncertainty
-	Robotics: human-robot collaboration, robot learning, task and motion planning
-Personal website: http://people.iiis.tsinghua.edu.cn/~zhang/

@@ -1,3 +1,0 @@
-name: 郑崇义
-email: chongyeezheng@gmail.com
-area: Robotics

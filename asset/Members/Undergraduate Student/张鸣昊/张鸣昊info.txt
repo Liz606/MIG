@@ -1,3 +1,0 @@
-name: 张鸣昊
-email: mehoozhang@gmail.com
-area: Representation Learning, Reinforcement Learning, 3D Vision

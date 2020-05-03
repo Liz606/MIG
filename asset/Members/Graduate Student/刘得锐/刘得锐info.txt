@@ -1,3 +1,0 @@
-name: 刘得锐
-email: terryliu.engsci@gmail.com
-area: Deep Reinforcement Learning

@@ -1,4 +1,0 @@
-name: 王同翰
-email: wangth18@mails.tsinghua.edu.cn
-area: Multi-Agent Reinforcement Learning, Deep Reinforcement Learning
-Personal Website: https://tonghanwang.github.io/
