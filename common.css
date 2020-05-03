@@ -13,7 +13,7 @@
 }
 .header{
     text-align: left;
-    border: 2px solid #6d6868;
+    border: 2px solid rgba(64, 64, 64, 0.8);
 }
 .logo{
     background-image: url('./asset/logo.png');
@@ -31,7 +31,7 @@ header .title{
 nav ul{
     text-align: right;
     padding: 15px;
-    background: #6d6868;
+    background: rgba(64, 64, 64, 0.8);
     color: #ffffff;
     margin: 0;
 }
