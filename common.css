@@ -18,8 +18,14 @@
 .logo{
     background-image: url('./asset/logo.png');
     background-origin: content-box;
+    background-repeat: no-repeat;
     float: left;
 }
+
+
+
+
+
 .drawer-handle {
     float: right;
     width: 41px;
@@ -132,7 +138,6 @@ nav.nav-open{
     box-sizing: border-box;
     color: #2f394f;
 }
-
 .nav-open ul li.active{
     background: #2f394f;
 }
@@ -147,18 +152,36 @@ nav.nav-open{
     font-size: 16px;
 }
 @media screen and (max-width:649px){
+    /* .concent-wrap{
+        padding-top: 50px;
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #fff;
+        padding-bottom: 20px;
+    } */
     .logo{
         /* width: 50px;
         height: 50px;
         background-size: 200%;
         background-position: -6% -25px; */
-        width: 150px;
+
+        /* width: 150px;
         height: 50px;
         background-size: 100%;
+        background-position: 0; */
+
+        width: 150px;
+        height: 50px;
+        background-size: 70%;
         background-position: 0;
     }
     nav{
-        display:none
+        display:none;
+        padding-top: 50px;
+
     }
     .content{
         padding: 5px;
