@@ -24,7 +24,8 @@
         .person ul li {
             list-style: none;
             overflow: hidden;
-            margin-bottom: 10px;
+            display: inline-block;
+            margin: 20px;
         }
 
         .avatar {
@@ -33,16 +34,20 @@
             background-size: cover;
             background-position: center center;
             background-origin: content-box;
-            float: left;
         }
 
         .info {
-            padding-left: 130px;
+            text-align: center;
         }
 
         .info p {
+            font-size: 18px;
             padding: 5px;
             margin: 0;
+        }
+
+        .info p a{
+            text-decoration: none;
         }
     </style>
     <title>People</title>
@@ -53,92 +58,35 @@
         <div class="concent-wrap">
             <header class="header">
                 <div class="logo"></div>
-                <div class="title">People</div>
+                <nav class="nav">
+                    <ul>  
+                        <li><a href="./index.html">Home</a></li>
+                        <li class="active"><a href="./people.html">People</a></li>
+                        <li><a href="./news.html">News</a></li>
+                        <li><a href="./publications.html">Publications</a></li> 
+                        <li><a href="./join.html">Join</a></li>
+                    </ul>
+                </nav>
+                <div class="drawer-handle">
+                    <div class="drawer-mask"></div>
+                    <i class="drawer-handle-icon"></i>
+                </div>
             </header>
-            <nav class="nav">
-                <ul>
-                    <li>Machine Intelligence Group</li>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./people.html">People</a></li>
-                    <li><a href="./news.html">News</a></li>
-                    <li><a href="./teaching.html">Teaching</a></li>
-                    <li><a href="./publications.html">Publications</a></li>
-                    <li><a href="./videos.html">Videos</a></li>
-                    <li><a href="./join.html">Join</a></li>
-                </ul>
-            </nav>
             <div class="content">
                 <div class="person">
                     <div class="title">Faculty</div>
                     <ul>
-                        <li>
-                            <div class="avatar" style="background-image: url('./asset/zhangchongjie.jpg');"></div>
-                            <div class="info">
-                                <p>name: 张崇洁</p>
-                                <p>email: chongjie@tsinghua.edu.cn </p>
-                                <p>area: Machine Learning: reinforcement learning, deep learning, statistical
+                        <li style="margin:none;margin-bottom: 10px;">
+                            <div class="avatar" style="background-image: url('./asset/zhangchongjie.jpg');float: left;"></div>
+                            <div class="info" style="text-align: left; padding-left: 130px;">
+                                <p><a href="http://people.iiis.tsinghua.edu.cn/~zhang/" target="_blank">张崇洁</a></p>
+                                <p>chongjie@tsinghua.edu.cn </p>
+                                <p>Machine Learning: reinforcement learning, deep learning, statistical
                                     learning</br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multi-Agent Systems:
+                                    Multi-Agent Systems:
                                     multi-agent learning, coordination, decision making under uncertainty</br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Robotics: human-robot
+                                    Robotics: human-robot
                                     collaboration, robot learning, task and motion planning</p>
-                                <p>Personal website: http://people.iiis.tsinghua.edu.cn/~zhang/</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="person">
-                    <div class="title">PhD</div>
-                    <ul>
-                        <li>
-                            <div class="avatar" style="background-image: url('./asset/chenghao.jpg');"></div>
-                            <div class="info">
-                                <p>name: 程浩</p>
-                                <p>email: cheng-h18@mails.tsinghua.edu.cn</p>
-                                <p>area: Deep Reinforcement Learning</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="avatar" style="background-image: url('./asset/dongheng.jpg');"></div>
-                            <div class="info">
-                                <p>name: 董恒</p>
-                                <p>email: drdhii@163.com</p>
-                                <p>area: Deep Reinforcement Learning</p>
-                                <p>Personal Website: https://drdh.github.io</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="avatar" style="background-image: url('./asset/lisiyuan.jpg');"></div>
-                            <div class="info">
-                                <p>name: 李斯源</p>
-                                <p>email: sy-li17@mails.tsinghua.edu.cn,</p>
-                                <p>area: deep reinforcement learning, hierarchical reinforcement learning, transfer
-                                    reinforcement learning</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="avatar" style="background-image: url('./asset/wangjianhao.jpg');"></div>
-                            <div class="info">
-                                <p>name: 王鉴浩</p>
-                                <p>email: wjh720.eric@gmail.com</p>
-                                <p>area: Deep Reinforcement Learning, Multi-agent Reinforcement Learning</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="avatar" style="background-image: url('./asset/zhangjin.jpg');"></div>
-                            <div class="info">
-                                <p>name: 张进</p>
-                                <p>email: jinzhang16@mails.tsinghua.edu.cn</p>
-                                <p>area: meta-RL</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="avatar" style="background-image: url('./asset/zhugaungxiang.jpg');"></div>
-                            <div class="info">
-                                <p>name: 朱广翔</p>
-                                <p>email: guangxiangzhu@outlook.com </p>
-                                <p>area: Sample-efficient reinforcement learning</p>
-                                <p>Personal Website: https://guangxiangzhu.github.io/</p>
                             </div>
                         </li>
                     </ul>
@@ -147,28 +95,57 @@
                     <div class="title">Graduate Students</div>
                     <ul>
                         <li>
+                            <div class="avatar" style="background-image: url('./asset/chenghao.jpg');"></div>
+                            <div class="info">
+                                <p>程浩</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="avatar" style="background-image: url('./asset/dongheng.jpg');"></div>
+                            <div class="info">
+                                <p><a href="https://drdh.github.io" target="_blank">董恒</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="avatar" style="background-image: url('./asset/lisiyuan.jpg');"></div>
+                            <div class="info">
+                                <p>李斯源</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="avatar" style="background-image: url('./asset/wangjianhao.jpg');"></div>
+                            <div class="info">
+                                <p>王鉴浩</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="avatar" style="background-image: url('./asset/zhangjin.jpg');"></div>
+                            <div class="info">
+                                <p>张进</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="avatar" style="background-image: url('./asset/zhugaungxiang.jpg');"></div>
+                            <div class="info">
+                                <p><a href="https://guangxiangzhu.github.io/" target="_blank">朱广翔</a></p>
+                            </div>
+                        </li>
+                        <li>
                             <div class="avatar" style="background-image: url('./asset/huhao.jpg');"></div>
                             <div class="info">
-                                <p>name: 胡昊</p>
-                                <p>email: hu-h19@mails.tsinghua.edu.cn </p>
-                                <p>area: Representation Learning for RL</p>
+                                <p>胡昊</p>
                             </div>
                         </li>
                         <li>
                             <div class="avatar" style="background-image: url('./asset/liuderui.jpg');"></div>
                             <div class="info">
-                                <p>name: 刘得锐</p>
-                                <p>email: terryliu.engsci@gmail.com</p>
-                                <p>area: Deep Reinforcement Learning</p>
+                                <p>刘得锐</p>
                             </div>
                         </li>
                         <li>
                             <div class="avatar" style="background-image: url('./asset/wangtonghan.jpg');"></div>
                             <div class="info">
-                                <p>name: 王同翰</p>
-                                <p>email: wangth18@mails.tsinghua.edu.cn</p>
-                                <p>area: Multi-Agent Reinforcement Learning, Deep Reinforcement Learning</p>
-                                <p>Personal Website: https://tonghanwang.github.io/</p>
+                                <p><a href="https://tonghanwang.github.io/" target="_blank">王同翰</a> </p>
                             </div>
                         </li>
                     </ul>
@@ -177,63 +154,66 @@
                     <div class="title">Undergraduate Student</div>
                     <ul>
                         <li>
-                            <div class="avatar" style="background-image: url('./asset/douyongqiang.png');"></div>
-                            <div class="info">
-                                <p>name: 窦勇强</p>
-                                <p>email: YongqiangDou00@gmail.com</p>
-                                <p>area: reinforcement learning, statistical learning</p>
-                            </div>
-                        </li>
-                        <li>
                             <div class="avatar" style="background-image: url('./asset/hanchi.png');"></div>
                             <div class="info">
-                                <p>name: 韩迟</p>
-                                <p>email: haanchi@qq.com</p>
-                                <p>area: NLP & MAS</p>
-                                <p>Personal Website: https://hanchi.me</p>
+                                <p><a href="https://hanchi.me" target="_blank">韩迟</a></p>
                             </div>
                         </li>
                         <li>
                             <div class="avatar" style="background-image: url('./asset/renzhizhou.jpg');"></div>
                             <div class="info">
-                                <p>name: 任之洲</p>
-                                <p>email: renzhizhou1998@gmail.com</p>
-                                <p>area: Reinforcement Learning</p>
+                                <p>任之洲</p>
                             </div>
                         </li>
                         <li>
                             <div class="avatar" style="background-image: url('./asset/zhangminghao.jpg');"></div>
                             <div class="info">
-                                <p>name: 张鸣昊</p>
-                                <p>email: mehoozhang@gmail.com</p>
-                                <p>area: Representation Learning, Reinforcement Learning, 3D Vision</p>
+                                <p>张鸣昊</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="person">
+                    <div class="title">Visiting Scholars</div>
+                    <ul>
+                        <li>
+                            <div class="avatar" style="background-image: url('./asset/douyongqiang.png');"></div>
+                            <div class="info">
+                                <p>窦勇强</p>
                             </div>
                         </li>
                         <li>
                             <div class="avatar" style="background-image: url('./asset/zhengchongyi.jpg');"></div>
                             <div class="info">
-                                <p>name: 郑崇义</p>
-                                <p>email: chongyeezheng@gmail.com</p>
-                                <p>area: Robotics</p>
+                                <p>郑崇义</p>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <!-- <div class="person">
-                    <div class="title">Visitors</div>
+                <div class="person">
+                    <div class="title">Alumni</div>
                     <ul>
                         <li></li>
                     </ul>
-                </div> -->
-                <!-- <div class="person">
-                    <div class="title">Group Alumni</div>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
 </body>
 
+<script>
+    var drawer = document.querySelector(".drawer-handle");
+    var nav = document.querySelector(".nav");
+    drawer.addEventListener("click", function(e){
+        var e = e || window.event, target = e.target || e.srcElement; // 兼容IE
+        console.log(target.className)
+        if(target.className === "drawer-handle"){
+            target.className = "drawer-handle drawer-open";
+            nav.className = "nav nav-open";
+        } else{
+            target.className = "drawer-handle";
+            nav.className = "nav";
+        }
+    })
+</script>
 </html>

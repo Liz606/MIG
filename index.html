@@ -17,20 +17,6 @@
             overflow: hidden;
         }
 
-        .hr {
-            height: 250px;
-            width: 2px;
-            background: rgba(64, 64, 64, 0.8);
-            margin: 0 auto;
-            display: inline-block;
-        }
-
-        .videos {
-            width: 49%;
-            float: right;
-            overflow: hidden;
-        }
-
         .latest-title {
             margin: 20px;
         }
@@ -55,20 +41,20 @@
         <div class="concent-wrap">
             <header class="header">
                 <div class="logo"></div>
-                <div class="title">About</div>
+                <nav class="nav">
+                    <ul>  
+                        <li class="active"><a href="./index.html">Home</a></li>
+                        <li><a href="./people.html">People</a></li>
+                        <li><a href="./news.html">News</a></li> 
+                        <li><a href="./publications.html">Publications</a></li> 
+                        <li><a href="./join.html">Join</a></li>
+                    </ul>
+                </nav>
+                <div class="drawer-handle">
+                    <div class="drawer-mask"></div>
+                    <i class="drawer-handle-icon"></i>
+                </div>
             </header>
-            <nav class="nav">
-                <ul>
-                    <li>Machine Intelligence Group</li>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./people.html">People</a></li>
-                    <li><a href="./news.html">News</a></li>
-                    <li><a href="./teaching.html">Teaching</a></li>
-                    <li><a href="./publications.html">Publications</a></li>
-                    <li><a href="./videos.html">Videos</a></li>
-                    <li><a href="./join.html">Join</a></li>
-                </ul>
-            </nav>
             <div class="content">
                 <div>
                     <p>Welcome to the Machine Intelligence Group! </p>
@@ -103,21 +89,24 @@
                             <li><a href="https://iiis.tsinghua.edu.cn/show-8391-1.html" target="_blank">Three Papers from MIG were accepted in ICLR 2020</a></li>
                         </ul>
                     </div>
-                    <div class="hr"></div>
-                    <div class="videos">
-                        <div class="latest-title">Latest Videos</div>
-                        <ul class="latest-content">
-                            <li><a href="https://sites.google.com/view/romarl" target="_blank">27 Marines vs. 30 Marines (ROMA)</a></li>
-                            <li><a href="https://sites.google.com/view/romarl" target="_blank">6 Zerglings & 4 Banelings (ROMA)</a></li>
-                            <li><a href="https://sites.google.com/view/romarl" target="_blank">1 Medivac, 2 Marauders & 7 Marines vs. 1 Medivac, 3 Marauders & 8 Marines (ROMA)</a></li>
-                            <li><a href="https://sites.google.com/view/romarl" target="_blank">1 Overseer & 10 Banelings vs. 1 Roach (NDQ)</a></li>
-                            <li><a href="https://sites.google.com/view/romarl" target="_blank">1 Zealots vs. 1 Ultralisk (NDQ)</a></li>
-                         </ul>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
-
+<script>
+    var drawer = document.querySelector(".drawer-handle");
+    var nav = document.querySelector(".nav");
+    drawer.addEventListener("click", function(e){
+        var e = e || window.event, target = e.target || e.srcElement; // 兼容IE
+        console.log(target.className)
+        if(target.className === "drawer-handle"){
+            target.className = "drawer-handle drawer-open";
+            nav.className = "nav nav-open";
+        } else{
+            target.className = "drawer-handle";
+            nav.className = "nav";
+        }
+    })
+</script>
 </html>
