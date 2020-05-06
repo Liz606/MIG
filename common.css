@@ -139,6 +139,13 @@ nav.nav-open{
 .nav-open ul li.active a{
     color: #fff;
 }
+.content {
+    text-align: left;
+    overflow: hidden;
+    padding: 40px;
+    line-height: 1.5;
+    font-size: 16px;
+}
 @media screen and (max-width:649px){
     .logo{
         width: 50px;
@@ -148,6 +155,9 @@ nav.nav-open{
     }
     nav{
         display:none
+    }
+    .content{
+        padding: 5px;
     }
 }
 @media screen and (min-width: 650px) {
@@ -202,11 +212,4 @@ nav.nav-open{
         color: #2f394f;
     }
 
-}
-.content {
-    text-align: left;
-    overflow: hidden;
-    padding: 40px;
-    line-height: 1.5;
-    font-size: 16px;
 }

@@ -66,6 +66,16 @@
             text-decoration: none;
             color: #fff;
         }
+
+        @media screen and (max-width:649px) {
+            .date {
+                margin: 0 20px 0 0;
+            }
+
+            .new-wrap {
+                margin-left: 0;
+            }
+        }
     </style>
     <title>News</title>
 </head>
@@ -76,11 +86,11 @@
             <header class="header">
                 <div class="logo"></div>
                 <nav class="nav">
-                    <ul>  
+                    <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./people.html">People</a></li>
-                        <li class="active"><a href="./news.html">News</a></li> 
-                        <li><a href="./publications.html">Publications</a></li> 
+                        <li class="active"><a href="./news.html">News</a></li>
+                        <li><a href="./publications.html">Publications</a></li>
                         <li><a href="./join.html">Join</a></li>
                     </ul>
                 </nav>
@@ -128,16 +138,17 @@
 <script>
     var drawer = document.querySelector(".drawer-handle");
     var nav = document.querySelector(".nav");
-    drawer.addEventListener("click", function(e){
+    drawer.addEventListener("click", function (e) {
         var e = e || window.event, target = e.target || e.srcElement; // 兼容IE
         console.log(target.className)
-        if(target.className === "drawer-handle"){
+        if (target.className === "drawer-handle") {
             target.className = "drawer-handle drawer-open";
             nav.className = "nav nav-open";
-        } else{
+        } else {
             target.className = "drawer-handle";
             nav.className = "nav";
         }
     })
 </script>
+
 </html>
