@@ -46,22 +46,32 @@
             margin: 0;
         }
 
-        .info p a{
+        .info p a {
             text-decoration: none;
         }
-        @media screen and (max-width:649px){
-            .content>div:nth-of-type(1) .avatar{
-                float: none!important;
+
+        .content>div:nth-of-type(1) .avatar {
+            width: 200px;
+            height: 265px;
+        }
+
+        @media screen and (max-width:649px) {
+            .content>div:nth-of-type(1) .avatar {
+                float: none !important;
                 margin: 0 auto;
+                width: 150px;
+                height: 200px;
             }
-            
-            .content>div:nth-of-type(1) .info{
-                padding-left: 0!important;
+
+            .content>div:nth-of-type(1) .info {
+                padding-left: 0 !important;
             }
-            .content>div:nth-of-type(1) .info>p:nth-of-type(1){
+
+            .content>div:nth-of-type(1) .info>p:nth-of-type(1) {
                 text-align: center;
             }
-            .person ul{
+
+            .person ul {
                 text-align: center;
             }
         }
@@ -75,10 +85,10 @@
             <header class="header">
                 <div class="logo"></div>
                 <nav class="nav">
-                    <ul>  
+                    <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li class="active"><a href="./people.html">People</a></li>
-                        <li><a href="./publications.html">Publications</a></li> 
+                        <li><a href="./publications.html">Publications</a></li>
                         <li><a href="./news.html">News</a></li>
                         <li><a href="./join.html">Join</a></li>
                     </ul>
@@ -93,8 +103,9 @@
                     <div class="title">Faculty</div>
                     <ul>
                         <li style="margin:none;margin-bottom: 10px;">
-                            <div class="avatar" style="background-image: url('./asset/zhangchongjie.jpg');float: left;"></div>
-                            <div class="info" style="text-align: left; padding-left: 130px;">
+                            <div class="avatar" style="background-image: url('./asset/zhangchongjie.jpg');float: left;">
+                            </div>
+                            <div class="info" style="text-align: left; padding-left: 230px;">
                                 <p><a href="http://people.iiis.tsinghua.edu.cn/~zhang/" target="_blank">张崇洁</a></p>
                                 <p>chongjie@tsinghua.edu.cn </p>
                                 <p>Machine Learning: reinforcement learning, deep learning, statistical
@@ -220,7 +231,7 @@
 <script>
     var drawer = document.querySelector(".drawer-handle");
     var nav = document.querySelector(".nav");
-    drawer.addEventListener("click", function(e){
+    drawer.addEventListener("click", function (e) {
         var e = e || window.event, target = e.target || e.srcElement; // 兼容IE
         if (target.className === "drawer-handle") {
             target.className = "drawer-handle drawer-open";
@@ -233,4 +244,5 @@
         }
     })
 </script>
+
 </html>
