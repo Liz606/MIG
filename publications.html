@@ -164,12 +164,14 @@
                                     <strong>Learn to Effectively Explore in Context-Based Meta-RL</strong> Under Review,
                                     2020.
                                 </li>
+                                <!-- [PDF][Website][Video][Code][arXiv] -->
                                 <li>Tonghan Wang*,
-                                    Jianhao Wang*, Yi Wu, and Chongjie Zhang
+                                    Jianhao Wang*, Yi Wu, and Chongjie Zhang Influence-Based
+                                    Multi-Agent Exploration.
+                                    ICLR 2020: International Conference on Learning Representations (Spotlight)
+                                    <a download href="source\Text Detection and Recognition in Imagery - A Survey.pdf">[PDF]</a>
                                     <a target="_blank"
-                                        href="https://openreview.net/forum?id=BJgy96EYvr&noteId=BJgy96EYvr">Influence-Based
-                                        Multi-Agent Exploration.
-                                        ICLR 2020: International Conference on Learning Representations (Spotlight)</a>
+                                        href="https://openreview.net/forum?id=BJgy96EYvr&noteId=BJgy96EYvr">[Website]</>
 
                                 </li>
                                 <li>Tonghan Wang*, Jianhao
@@ -244,6 +246,22 @@
     </div>
 </body>
 <script>
+    // header drawer
+    var drawer = document.querySelector(".drawer-handle");
+    var nav = document.querySelector(".nav");
+    drawer.addEventListener("click", function (e) {
+        var e = e || window.event, target = e.target || e.srcElement; // 兼容IE
+        if (target.className === "drawer-handle") {
+            target.className = "drawer-handle drawer-open";
+            nav.className = "nav nav-open";
+            document.body.style.position = "fixed";
+        } else {
+            target.className = "drawer-handle";
+            nav.className = "nav";
+            document.body.style.position = "relative";
+        }
+    })
+    // pc端滚动时间轴
     var menu = document.querySelector(".menu");
     var article = document.querySelector(".publication-content");
     var titles = document.querySelectorAll(".publication-content .title");
@@ -274,21 +292,10 @@
         var activeItem = document.querySelector(".publication-content #content-" + target.innerText);
         article.scrollTop = activeItem.offsetTop - activeItem.clientHeight;
     })
-
-    var drawer = document.querySelector(".drawer-handle");
-    var nav = document.querySelector(".nav");
-    drawer.addEventListener("click", function (e) {
-        var e = e || window.event, target = e.target || e.srcElement; // 兼容IE
-        if (target.className === "drawer-handle") {
-            target.className = "drawer-handle drawer-open";
-            nav.className = "nav nav-open";
-            document.body.style.position = "fixed";
-        } else {
-            target.className = "drawer-handle";
-            nav.className = "nav";
-            document.body.style.position = "relative";
-        }
-    })
+    // 文件下载
+    function download(filename){
+        console.log(location);
+    }
 </script>
 
 </html>
