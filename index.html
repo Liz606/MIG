@@ -99,15 +99,16 @@
     var nav = document.querySelector(".nav");
     drawer.addEventListener("click", function (e) {
         var e = e || window.event, target = e.target || e.srcElement; // 兼容IE
-        console.log(target.className)
         if (target.className === "drawer-handle") {
             target.className = "drawer-handle drawer-open";
             nav.className = "nav nav-open";
-            document.body.style.overflow = "hidden"
+            // document.body.style.overflow = "hidden";
+            document.body.style.position = "fixed"
         } else {
             target.className = "drawer-handle";
             nav.className = "nav";
-            document.body.style.overflow = ""
+            // document.body.style.overflow = ""
+            document.body.style.position = "relative"
         }
     })
 </script>
