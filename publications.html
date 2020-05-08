@@ -61,7 +61,7 @@
         }
 
         .publication-content>div {
-            padding: 60px 0;
+            padding: 30px 0;
         }
 
         .publication-content .title {
@@ -592,7 +592,8 @@
         // clientHeight 可视区域高度
         // scrollTop 滚动已隐藏高度
         Array.prototype.slice.call(titles).forEach(function (e, i) {
-            if (e.offsetTop - target.scrollTop > 230 && e.offsetTop - target.scrollTop < 300 && e.className != "title active") {
+            if (e.offsetTop - article.scrollTop > 30 && e.offsetTop - article.scrollTop < 300 && e.className != "title active") {
+            // console.log(e.offsetTop - article.scrollTop) // 相对窗口的偏移
                 document.querySelector(".publication-content .title.active").className = "title";
                 e.className = "title active";
                 Array.prototype.slice.call(menu.children).forEach(function (u) {
@@ -602,7 +603,6 @@
                     }
                 });
             }
-            // console.log(e.offsetTop, "-", target.scrollTop, "=", e.offsetTop - target.scrollTop) // 相对窗口的偏移
         });
     })
     menu.addEventListener("click", function (e) {
