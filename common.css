@@ -12,7 +12,7 @@ html,body{
 }
 .concent-wrap{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1024px;
     min-width: 356px;
     margin: 0 auto;
     background: #fff;;
@@ -195,8 +195,8 @@ nav.nav-open{
 }
 @media screen and (min-width: 650px) {
     .logo{
-        width: 350px;
-        height: 130px;
+        width: 300px;
+        height: 100px;
         background-size: cover;
         background-position: center center;
     }
@@ -205,7 +205,7 @@ nav.nav-open{
     }
     nav{
         float: right;
-        height: 130px;
+        height: 100px;
         display: block;
     }
     nav ul{
